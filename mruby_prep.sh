@@ -16,3 +16,10 @@ rake
 
 popd
 
+MRBDIR=mbed-mruby
+cp -r $SRCDIR/src $MRBDIR
+cp -r $SRCDIR/include $MRBDIR
+cp -r $SRCDIR/build/mbed/mrblib/mrblib.c $MRBDIR/mrblib
+rsync --exclude 'mruby-bin*' --exclude='mruby-io*' --exclude='test/' --include='*/' --include='*.c' --exclude='*' -av $SRCDIR/mrbgems/ $MRBDIR/mrbgems/
+rsync --exclude='*.d' --exclude='*.o' -av $SRCDIR/build/mbed/mrbgems/ $MRBDIR/mrbgems/
+
