@@ -417,7 +417,7 @@ char ruby_code[512] = { 0 };
 char last_code_line[128] = { 0 };
 
 int
-mirb_main(int argc, char **argv)
+mirb_main()
 {
 #endif
 
@@ -447,12 +447,14 @@ mirb_main(int argc, char **argv)
     return EXIT_FAILURE;
   }
 
+/*
   n = parse_args(mrb, argc, argv, &args);
   if (n == EXIT_FAILURE) {
     cleanup(mrb, &args);
     usage(argv[0]);
     return n;
   }
+*/
 
   ARGV = mrb_ary_new_capa(mrb, args.argc);
   for (i = 0; i < args.argc; i++) {

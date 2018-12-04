@@ -2,11 +2,11 @@
 
 extern "C" {
 #include "mruby.h"
-int mirb_main(int argc, char **argv);
+int mirb_main(void);
 }
 
 
-int main(int argc, char **argv) {
-    mirb_main(argc, argv);
+int main(void) {
+    mirb_main();
 }
 
