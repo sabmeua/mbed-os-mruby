@@ -1,0 +1,11 @@
+test/
+*.rb
+*.rake
+*.gembox
+*.yml
+*.md
+*.y
+keywords
+.gitignore
+*.d
+*.o

@@ -20,6 +20,11 @@ MRBDIR=mbed-mruby
 cp -r $SRCDIR/src $MRBDIR
 cp -r $SRCDIR/include $MRBDIR
 cp -r $SRCDIR/build/mbed/mrblib/mrblib.c $MRBDIR/mrblib
-rsync --exclude 'mruby-bin*' --exclude='mruby-io*' --exclude='test/' --include='*/' --include='*.c' --include='*.h' --include='*.def' --exclude='*' -av $SRCDIR/mrbgems/ $MRBDIR/mrbgems/
-rsync --exclude 'mruby-bin*' --exclude='mruby-io*' --exclude='*.d' --exclude='*.o' -av $SRCDIR/build/mbed/mrbgems/ $MRBDIR/mrbgems/
+
+MBEDEXLIST=mbed.gembox.exclude.list
+GEMSEXLIST=mrbgems.exclude.list
+rsync -av --exclude-from=$MBEDEXLIST --exclude-from=$GEMSEXLIST \
+  $SRCDIR/mrbgems/ $MRBDIR/mrbgems/
+rsync -av --exclude-from=$MBEDEXLIST --exclude-from=$GEMSEXLIST \
+  $SRCDIR/build/mbed/mrbgems/ $MRBDIR/mrbgems/
 

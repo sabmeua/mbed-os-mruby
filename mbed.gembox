@@ -1,6 +1,7 @@
 MRuby::GemBox.new do |conf|
+  exclds = File.readlines("#{root}/../mbed.gembox.exclude.list").map{|e| e.chomp}
   Dir.glob("#{root}/mrbgems/mruby-*/mrbgem.rake") do |x|
     g = File.basename File.dirname x
-    conf.gem :core => g unless g =~ /^mruby-(io|bin-.+|test)$/
+    conf.gem :core => g unless exclds.include? g
   end
 end
