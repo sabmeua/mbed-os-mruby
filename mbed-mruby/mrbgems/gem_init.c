@@ -14,8 +14,6 @@ void GENERATED_TMP_mrb_mruby_random_gem_init(mrb_state*);
 void GENERATED_TMP_mrb_mruby_random_gem_final(mrb_state*);
 void GENERATED_TMP_mrb_mruby_fiber_gem_init(mrb_state*);
 void GENERATED_TMP_mrb_mruby_fiber_gem_final(mrb_state*);
-void GENERATED_TMP_mrb_mruby_sleep_gem_init(mrb_state*);
-void GENERATED_TMP_mrb_mruby_sleep_gem_final(mrb_state*);
 void GENERATED_TMP_mrb_mruby_metaprog_gem_init(mrb_state*);
 void GENERATED_TMP_mrb_mruby_metaprog_gem_final(mrb_state*);
 void GENERATED_TMP_mrb_mruby_math_gem_init(mrb_state*);
@@ -30,8 +28,6 @@ void GENERATED_TMP_mrb_mruby_string_ext_gem_init(mrb_state*);
 void GENERATED_TMP_mrb_mruby_string_ext_gem_final(mrb_state*);
 void GENERATED_TMP_mrb_mruby_eval_gem_init(mrb_state*);
 void GENERATED_TMP_mrb_mruby_eval_gem_final(mrb_state*);
-void GENERATED_TMP_mrb_mruby_time_gem_init(mrb_state*);
-void GENERATED_TMP_mrb_mruby_time_gem_final(mrb_state*);
 void GENERATED_TMP_mrb_mruby_proc_ext_gem_init(mrb_state*);
 void GENERATED_TMP_mrb_mruby_proc_ext_gem_final(mrb_state*);
 void GENERATED_TMP_mrb_mruby_method_gem_init(mrb_state*);
@@ -52,10 +48,6 @@ void GENERATED_TMP_mrb_mruby_exit_gem_init(mrb_state*);
 void GENERATED_TMP_mrb_mruby_exit_gem_final(mrb_state*);
 void GENERATED_TMP_mrb_mruby_enum_lazy_gem_init(mrb_state*);
 void GENERATED_TMP_mrb_mruby_enum_lazy_gem_final(mrb_state*);
-void GENERATED_TMP_mrb_mruby_io_gem_init(mrb_state*);
-void GENERATED_TMP_mrb_mruby_io_gem_final(mrb_state*);
-void GENERATED_TMP_mrb_mruby_socket_gem_init(mrb_state*);
-void GENERATED_TMP_mrb_mruby_socket_gem_final(mrb_state*);
 void GENERATED_TMP_mrb_mruby_class_ext_gem_init(mrb_state*);
 void GENERATED_TMP_mrb_mruby_class_ext_gem_final(mrb_state*);
 void GENERATED_TMP_mrb_mruby_compar_ext_gem_init(mrb_state*);
@@ -86,8 +78,6 @@ mrb_final_mrbgems(mrb_state *mrb) {
   GENERATED_TMP_mrb_mruby_toplevel_ext_gem_final(mrb);
   GENERATED_TMP_mrb_mruby_compar_ext_gem_final(mrb);
   GENERATED_TMP_mrb_mruby_class_ext_gem_final(mrb);
-  GENERATED_TMP_mrb_mruby_socket_gem_final(mrb);
-  GENERATED_TMP_mrb_mruby_io_gem_final(mrb);
   GENERATED_TMP_mrb_mruby_enum_lazy_gem_final(mrb);
   GENERATED_TMP_mrb_mruby_exit_gem_final(mrb);
   GENERATED_TMP_mrb_mruby_pack_gem_final(mrb);
@@ -98,7 +88,6 @@ mrb_final_mrbgems(mrb_state *mrb) {
   GENERATED_TMP_mrb_mruby_sprintf_gem_final(mrb);
   GENERATED_TMP_mrb_mruby_method_gem_final(mrb);
   GENERATED_TMP_mrb_mruby_proc_ext_gem_final(mrb);
-  GENERATED_TMP_mrb_mruby_time_gem_final(mrb);
   GENERATED_TMP_mrb_mruby_eval_gem_final(mrb);
   GENERATED_TMP_mrb_mruby_string_ext_gem_final(mrb);
   GENERATED_TMP_mrb_mruby_enumerator_gem_final(mrb);
@@ -106,7 +95,6 @@ mrb_final_mrbgems(mrb_state *mrb) {
   GENERATED_TMP_mrb_mruby_array_ext_gem_final(mrb);
   GENERATED_TMP_mrb_mruby_math_gem_final(mrb);
   GENERATED_TMP_mrb_mruby_metaprog_gem_final(mrb);
-  GENERATED_TMP_mrb_mruby_sleep_gem_final(mrb);
   GENERATED_TMP_mrb_mruby_fiber_gem_final(mrb);
   GENERATED_TMP_mrb_mruby_random_gem_final(mrb);
 }
@@ -115,7 +103,6 @@ void
 mrb_init_mrbgems(mrb_state *mrb) {
   GENERATED_TMP_mrb_mruby_random_gem_init(mrb);
   GENERATED_TMP_mrb_mruby_fiber_gem_init(mrb);
-  GENERATED_TMP_mrb_mruby_sleep_gem_init(mrb);
   GENERATED_TMP_mrb_mruby_metaprog_gem_init(mrb);
   GENERATED_TMP_mrb_mruby_math_gem_init(mrb);
   GENERATED_TMP_mrb_mruby_array_ext_gem_init(mrb);
@@ -123,7 +110,6 @@ mrb_init_mrbgems(mrb_state *mrb) {
   GENERATED_TMP_mrb_mruby_enumerator_gem_init(mrb);
   GENERATED_TMP_mrb_mruby_string_ext_gem_init(mrb);
   GENERATED_TMP_mrb_mruby_eval_gem_init(mrb);
-  GENERATED_TMP_mrb_mruby_time_gem_init(mrb);
   GENERATED_TMP_mrb_mruby_proc_ext_gem_init(mrb);
   GENERATED_TMP_mrb_mruby_method_gem_init(mrb);
   GENERATED_TMP_mrb_mruby_sprintf_gem_init(mrb);
@@ -134,8 +120,6 @@ mrb_init_mrbgems(mrb_state *mrb) {
   GENERATED_TMP_mrb_mruby_pack_gem_init(mrb);
   GENERATED_TMP_mrb_mruby_exit_gem_init(mrb);
   GENERATED_TMP_mrb_mruby_enum_lazy_gem_init(mrb);
-  GENERATED_TMP_mrb_mruby_io_gem_init(mrb);
-  GENERATED_TMP_mrb_mruby_socket_gem_init(mrb);
   GENERATED_TMP_mrb_mruby_class_ext_gem_init(mrb);
   GENERATED_TMP_mrb_mruby_compar_ext_gem_init(mrb);
   GENERATED_TMP_mrb_mruby_toplevel_ext_gem_init(mrb);
