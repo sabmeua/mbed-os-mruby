@@ -2,3 +2,6 @@ BUILD
 mbed_settings.pyc
 mruby-src
 mruby-src.lib
+.vscode
+GettingStarted.html
+mbed_config.h
