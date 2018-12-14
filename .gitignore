@@ -5,3 +5,4 @@ mruby-src.lib
 .vscode
 GettingStarted.html
 mbed_config.h
+makefile.targets
